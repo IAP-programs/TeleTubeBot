@@ -17,9 +17,7 @@ def reply(message) :
       data_type = data_type[0]
     except :
       message1 = "sorry there is no data "
-    return message1, data_type
-
-#API_KEY = 'AIzaSyC_fl_WsN-chJn1_QAwPIuuyoXh0rcQslE'
+    return message1, d
 #CHANNEL_ID = 'UCGZd96UgAuHdsW-PS-45SSw'
 with open("api_key", "r") as f1 :
   API_KEY = f1.read()
@@ -44,8 +42,6 @@ def check_new_subscribers():
     from google.oauth2.credentials import Credentials
     from googleapiclient.discovery import build
     import time
-    API_KEY = 'AIzaSyC_fl_WsN-chJn1_QAwPIuuyoXh0rcQslE'
-    CHANNEL_ID = 'UCGZd96UgAuHdsW-PS-45SSw'
     initial_subscribers = get_subscriber_count()
     while True:
         current_subscribers = get_subscriber_count()
