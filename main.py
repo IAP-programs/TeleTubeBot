@@ -18,7 +18,7 @@ def reply(message) :
     except :
       message1 = "sorry there is no data "
     return message1, d
-#CHANNEL_ID = 'UCGZd96UgAuHdsW-PS-45SSw'
+#CHANNEL_ID = 'uHdsW-PS-45SSw'
 with open("api_key", "r") as f1 :
   API_KEY = f1.read()
 with open("channel_id", "r") as f1 :
