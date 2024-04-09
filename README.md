@@ -19,10 +19,19 @@ To obtain the channel ID of a YouTube channel:
 
 ## Obtaining YouTube API Key
 To obtain a YouTube API key:
-1. Sign in to [Google Developer Console](https://console.developers.google.com/).
-2. Create a new project.
-3. Enable the YouTube Data API.
-4. Create an API key and save it securely.
+- Go to the [Google Cloud Console](https://console.cloud.google.com/).
+- Create a new project if you haven't already.
+
+### 2. Enable the YouTube Data API v3
+
+- In the Google Cloud Console, navigate to API & Services > Library.
+- Search for "YouTube Data API v3" and enable it for your project.
+
+### 3. Create credentials
+
+- After enabling the API, go to API & Services > Credentials.
+- Click on "Create credentials" and select "API key". This will generate an API key and copy the key 
+
 
 ## Usage
 1. **Run the Bot**: `python bot.py`
