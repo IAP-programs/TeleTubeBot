@@ -6,9 +6,9 @@ This Telegram bot allows users to interact with YouTube channels through Telegra
 1. **Clone the Repository**: `git clone https://github.com/IAP-programs/TeleTubeBot`
 2. **Install Dependencies**: `pip install -r requirements.txt`
 3. **Configuration**:
-   - Add your Telegram bot token to `bot_token.txt`.
-   - Obtain the YouTube API key and add it to `api_key.txt`.
-   - Enter the channel ID of the YouTube channel in `channel_id.txt`.
+   - Add your Telegram bot token to `bot_token`.
+   - Obtain the YouTube API key and add it to `api_key`.
+   - Enter the channel ID of the YouTube channel in `channel_id`.
 
 ## Obtaining Channel ID
 To obtain the channel ID of a YouTube channel:
