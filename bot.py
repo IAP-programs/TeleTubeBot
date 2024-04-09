@@ -1,8 +1,9 @@
+channel_link = "https://m.youtube.com/channel/UCGZd96UgAuHdsW-PS-45SSw"
 import telebot
 import main
 import time
 import os
-from telegram import Bot
+#from telegram import Bot
 os.system("clear")
 def file(name, data) :
  file = open(name, "a")
@@ -57,11 +58,11 @@ def send_welcome(message):
     if user_id in file :
         print(user_id+" this user subscriped ")
     else :
-        bot.reply_to(message, """🚨 Subscription Required 🚨
+        bot.reply_to(message, f"""🚨 Subscription Required 🚨
 
 To access the bot's features, please subscribe to my YouTube channel first. Your subscription helps support my work and allows me to continue improving the bot for you.
 
-Here's the link to subscribe : https://m.youtube.com/channel/UCGZd96UgAuHdsW-PS-45SSw""")
+Here's the link to subscribe : {channel_link}""")
         m = main.check_new_subscribers()
         m = str(m)
         if  m == "New subscriber detected!" :
